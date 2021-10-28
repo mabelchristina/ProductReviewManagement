@@ -58,9 +58,11 @@ namespace ProductReviewManagement
             //UC 6
             //management.SkipFiveRecord(productReviewList);
             //UC 9
-            ProductReviewDataTable pdt = new ProductReviewDataTable();
-            DataTable table = pdt.AddToDatatable();
-            pdt.DisplayProductReview(table);
+            ProductReviewDataTable productReviewDataTable = new ProductReviewDataTable();
+            // DataTable table = pdt.AddToDatatable(); 
+            //pdt.DisplayProductReview(table);
+            //UC10
+            productReviewDataTable.AverageOfProductRatings();
 
         }
     }
