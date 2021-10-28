@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 
 namespace ProductReviewManagement
 {
@@ -55,7 +56,11 @@ namespace ProductReviewManagement
             //UC5
             //management.RetrieveProductIdAndReview(productReviewList);
             //UC 6
-            management.SkipFiveRecord(productReviewList);
+            //management.SkipFiveRecord(productReviewList);
+            //UC 9
+            ProductReviewDataTable pdt = new ProductReviewDataTable();
+            DataTable table = pdt.AddToDatatable();
+            pdt.DisplayProductReview(table);
 
         }
     }
