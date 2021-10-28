@@ -53,7 +53,9 @@ namespace ProductReviewManagement
             //UC4
             //management.RetrieveCountOfRecords(productReviewList);
             //UC5
-            management.RetrieveProductIdAndReview(productReviewList);
+            //management.RetrieveProductIdAndReview(productReviewList);
+            //UC 6
+            management.SkipFiveRecord(productReviewList);
 
         }
     }
