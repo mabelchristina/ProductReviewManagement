@@ -49,7 +49,10 @@ namespace ProductReviewManagement
             //UC2
             //management.TopRecords(productReviewList);
             //UC3
-            management.SelectedRecord(productReviewList);
+            //management.SelectedRecord(productReviewList);
+            //UC4
+            management.RetrieveCountOfRecords(productReviewList);
+
         }
     }
 }
