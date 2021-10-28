@@ -37,12 +37,15 @@ namespace ProductReviewManagement
                 new ProductReview(){ProductID=25,UserID=20,Rating=6,Review="nice",isLike=true},
                 new ProductReview(){ProductID=17,UserID=18,Rating=11,Review="nice",isLike=true},
             };
-            foreach (var list in productReviewList)
-            {
-                Console.WriteLine("ProductID : " + list.ProductID + " UserID : " + list.UserID + " Rating : " + list.Rating
-                    + " Review : " + list.Review + " isLike : " + list.isLike);
-            }
-            Console.ReadKey();
+            //foreach (var list in productReviewList)
+            //{
+            //    Console.WriteLine("ProductID : " + list.ProductID + " UserID : " + list.UserID + " Rating : " + list.Rating
+            //        + " Review : " + list.Review + " isLike : " + list.isLike);
+            //}
+            //Console.ReadKey();
+
+            Management management = new Management();
+            management.TopRecords(productReviewList);
         }
     }
 }
