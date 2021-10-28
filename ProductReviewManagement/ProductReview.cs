@@ -11,10 +11,5 @@ namespace ProductReviewManagement
         public int Rating { get; set; }
         public string Review { get; set; }
         public bool isLike { get; set; }
-
-        public string toString()
-        {
-            return $"ProductID: - {ProductID}  UserID: - { UserID} Rating:- {Rating} Review:- { Review}  isLike:- { isLike}";
-        }
     }
 }

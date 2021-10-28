@@ -39,7 +39,8 @@ namespace ProductReviewManagement
             };
             foreach (var list in productReviewList)
             {
-                Console.WriteLine(list.toString());
+                Console.WriteLine("ProductID : " + list.ProductID + " UserID : " + list.UserID + " Rating : " + list.Rating
+                    + " Review : " + list.Review + " isLike : " + list.isLike);
             }
             Console.ReadKey();
         }
